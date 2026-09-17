@@ -1,0 +1,3 @@
+Flask
+better-profanity
+gunicorn
