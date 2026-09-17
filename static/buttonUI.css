@@ -1,0 +1,149 @@
+body 
+{
+    background-color:#444444   
+}
+
+@media (max-width: 768px) /* Smaller Screens */
+{
+    .quote 
+    {
+        font-size: 32px;
+    }
+
+  .button-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    .backButton,
+        .addButton,
+        .dismissButton {
+            height: 85px;
+            font-size: 32px;
+            width: 500px
+        }
+
+  }
+
+}
+
+@media (min-width: 769px) {
+
+    .quote 
+    {
+        font-size: 64px;
+    }
+    .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    gap: 24px;              
+    justify-content: center;
+        .backButton,
+        .addButton,
+        .dismissButton {
+            height: 200px;
+            font-size: 80px;
+            width: 1000px
+        }
+    }
+
+}
+.title
+{
+    background-color:#fff;
+    color:black;
+    font-size: 64px;
+    font-weight: bold;
+    font-family:'Trebuchet MS';
+    box-sizing: border-box;
+    border: 5px solid black;
+    text-align: center;
+    height: 80px;
+}
+
+.quote
+{
+    background-color:#fff;
+    color:black;
+    font-weight: bold;
+    font-family:'Trebuchet MS';
+    box-sizing: border-box;
+    border: 5px solid black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+.backButton 
+{
+    background-color: #999999;
+    color: white;
+    
+
+    font-weight: bold;
+    font-family:'Trebuchet MS';
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.backButton:hover 
+{
+    background-color: #777777;
+}
+.backButton:active
+{
+    transform: scale(0.95);
+}
+
+.addButton 
+{
+    background-color: #065c06;
+    color: white;
+
+
+    font-weight: bold;
+    font-family:'Trebuchet MS';
+    box-sizing: border-box;
+
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.addButton:hover 
+{
+    background-color: #044404;
+}
+.addButton:active
+{
+    transform: scale(0.95);
+}
+
+.dismissButton 
+{  
+    background-color: #961111;
+    color: white;
+    
+
+    font-weight: bold;
+    font-family:'Trebuchet MS';
+
+    
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.dismissButton:hover 
+{
+    background-color: #6e0d0d;
+}
+.dismissButton:active
+{
+    transform: scale(0.95);
+}
+
