@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='buttonUI.css') }}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Panel</title>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+
+    <script> const jsq = JSON.parse('{{ q | tojson | safe }}'); </script>
+    
+   <!--HOOK UP QUOTES AND COUNTER-->
+    <div class="heading">
+        <h1 class="title" align="center"></h1>
+        <p class="quote" align="center" id="final_qoutes"></p>
+    </div>
+    <!--HOOK FUNCTIONS TO BUTTONS-->
+    <div class="button-container">
+        <button type="button" class="backButton">Back</button>
+        <button type="button" class="addButton">Add</button>
+        <button type="button" class="dismissButton">Dismiss</button>
+    </div>
+</body>
+</html>
