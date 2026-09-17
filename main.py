@@ -60,7 +60,7 @@ def dev_page():
     quotes = messages()
     length = len(quotes)
     print(quotes)
-    return render_template("DevPage.html", q=quotes, length=length)
+    return render_template("DevPage2.html", q=quotes, length=length)
 
 @app.route("/add-q", methods=['POST'])
 def add_q():
